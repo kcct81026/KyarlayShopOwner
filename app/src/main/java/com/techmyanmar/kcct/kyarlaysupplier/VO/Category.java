@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class Category extends  {
+public class Category extends UniversalPost {
 
     @SerializedName("id")
     private int id;
