@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:id="@+id/title"
+        android:gravity="center"
+        android:textSize="@dimen/text_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_language"
+        android:textColor="@color/colorPrimaryDark"/>
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:id="@+id/myanmar_layout"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/dimen_55"
+        android:layout_width="match_parent"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/myanmar"
+            android:gravity="left|center"
+            android:textSize="@dimen/text_16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.86"
+            android:text="@string/setting_myanmar"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:layout_weight="0.15"
+            android:id="@+id/radiomyanmar" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/english_layout"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/dimen_55"
+        android:layout_width="match_parent"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/english"
+            android:gravity="left|center"
+            android:textSize="@dimen/text_16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/setting_english"
+            android:layout_weight="0.86"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:layout_weight="0.15"
+            android:id="@+id/radioenglish" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:id="@+id/next_layout"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Next"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

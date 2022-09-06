@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/layout_margin_reading_post"
+    app:cardElevation="@dimen/cardElevation">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/imageframe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ProgressBar
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/previewProgress"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:indeterminateTint="@color/colorPrimaryDark"/>
+        </FrameLayout>
+        <TextView
+            android:id="@+id/cart_detail_foooter"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:paddingTop="20dp"
+            android:gravity="center|top"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

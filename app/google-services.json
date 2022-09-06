@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "30790254399",
+    "project_id": "kyarlay-supplier",
+    "storage_bucket": "kyarlay-supplier.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30790254399:android:0fa022882c3a9985535d8a",
+        "android_client_info": {
+          "package_name": "com.techmyanmar.kcct.kyarlaysupplier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30790254399-0dcijd67ke2g4klrvecdcedci38id1t0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8tPpzFgbiCcZOvd2TLznso-wMZqYyXGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30790254399-0dcijd67ke2g4klrvecdcedci38id1t0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

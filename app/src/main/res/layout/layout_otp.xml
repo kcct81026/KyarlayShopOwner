@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55">
+
+            <LinearLayout
+                android:layout_gravity="center|right"
+                android:id="@+id/back_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center|right"
+                    app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/layout_padding"
+        android:layout_marginBottom="@dimen/layout_padding"
+        android:layout_gravity="center"
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_55"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:id="@+id/linearName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_marginBottom="25dp"
+                android:layout_gravity="center"
+                android:id="@+id/txt_title"
+                android:text="Title"
+                android:textSize="@dimen/text_18"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/layout_padding"/>
+
+            <TextView
+                android:layout_marginRight="@dimen/layout_padding"
+                android:layout_marginLeft="@dimen/layout_padding"
+                android:paddingLeft="15dp"
+                android:id="@+id/txt_enter"
+                android:text="Please Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:layout_marginRight="@dimen/dimen_8"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/layout_margin_reading_post"
+                    android:id="@+id/otp1"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:inputType="number"/>
+
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:gravity="center"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="@dimen/layout_padding"
+                android:layout_marginLeft="@dimen/layout_padding"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/text_16"
+                android:id="@+id/button"
+                android:textColor="@color/white"
+                android:background="@drawable/background_blue_solid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/timer"
+                android:text=""
+                android:textSize="@dimen/text_16"
+                android:layout_margin="@dimen/layout_margin_reading_post"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/txtNewAcc"
+                android:text=""
+                android:textSize="@dimen/text_16"
+                android:layout_margin="@dimen/layout_margin_reading_post"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:id="@+id/txt_Click"
+            android:text="Click Here To Get Otp Code"
+            android:textSize="@dimen/text_18"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/layout_padding"/>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

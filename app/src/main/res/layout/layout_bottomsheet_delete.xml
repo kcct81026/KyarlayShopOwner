@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/dialog"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Warning"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_margin="@dimen/layout_margin_reading_post"
+            app:srcCompat="@android:drawable/ic_delete"
+            android:tint="@color/text_gray"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_margin="@dimen/dimen_20"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/footer">
+
+
+        <Button
+            android:layout_marginRight="@dimen/layout_margin_reading_post"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:id="@+id/dialog_delete_cancel"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/blue_corner_white_solid"/>
+
+        <Button
+            android:layout_marginLeft="@dimen/layout_margin_reading_post"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:id="@+id/dialog_delete_confirm"
+            android:textColor="@color/white"
+            android:background="@drawable/background_blue_solid"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

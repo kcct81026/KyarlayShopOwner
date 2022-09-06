@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/layout_back" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_marginTop="@dimen/dimen_55"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_marginRight="@dimen/layout_margin_reading_post"
+                android:layout_marginTop="@dimen/layout_margin_reading_post"
+                android:layout_marginLeft="@dimen/layout_padding"
+                android:paddingTop="@dimen/dimen_20"
+                android:id="@+id/layoutLanguage"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Change Language"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_16"
+                    android:id="@+id/txtLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginRight="@dimen/layout_margin_reading_post"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24_grey"
+                    android:id="@+id/imgLanguage"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/dimen_20"
+                    android:layout_height="@dimen/dimen_20" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                android:layout_marginRight="@dimen/layout_margin_reading_post"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background"
+                android:layout_marginTop="@dimen/dimen_20"/>
+
+            <LinearLayout
+                android:layout_marginRight="@dimen/layout_margin_reading_post"
+                android:layout_marginTop="@dimen/layout_margin_reading_post"
+                android:layout_marginLeft="@dimen/layout_padding"
+                android:paddingTop="@dimen/dimen_20"
+                android:id="@+id/layoutPassword"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Change Password"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_16"
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginRight="@dimen/layout_margin_reading_post"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24_grey"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/dimen_20"
+                    android:layout_height="@dimen/dimen_20" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                android:layout_marginRight="@dimen/layout_margin_reading_post"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background"
+                android:layout_marginTop="@dimen/dimen_20"/>
+
+            <LinearLayout
+                android:layout_marginRight="@dimen/layout_margin_reading_post"
+                android:layout_marginTop="@dimen/layout_margin_reading_post"
+                android:layout_marginLeft="@dimen/layout_padding"
+                android:paddingTop="@dimen/dimen_20"
+                android:id="@+id/layoutLogout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Log Out"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_16"
+                    android:id="@+id/txtLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginRight="@dimen/layout_margin_reading_post"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24_grey"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/dimen_20"
+                    android:layout_height="@dimen/dimen_20" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                android:layout_marginRight="@dimen/layout_margin_reading_post"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background"
+                android:layout_marginTop="@dimen/dimen_20"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

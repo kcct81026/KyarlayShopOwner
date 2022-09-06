@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                android:text="Add New Product"
+                android:layout_gravity="center"
+                android:textColor="@color/text"
+                />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_marginTop="@dimen/dimen_55"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/layout_margin_reading_post" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/titleAdd"
+                    android:text="Add New Product"
+                    android:textColor="@color/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/titleEdit"
+                    android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                    android:text="Edit Product"
+                    android:textColor="@color/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_14"
+                    android:padding="@dimen/layout_margin_reading_post"
+                    android:background="@drawable/bg_blue_corner_solid_transperant"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="@dimen/layout_margin_reading_post"
+                android:id="@+id/subTitleAdd"
+                android:text="Add New Product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_14"
+                />
+
+            <LinearLayout
+                android:id="@+id/layoutContact"
+                android:padding="@dimen/layout_margin_reading_post"
+                android:background="@color/blue_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titleHelp"
+                    android:text="Need Help?"
+                    android:textSize="@dimen/text_16"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/layout_margin_reading_post"
+                    android:id="@+id/subTitleHelp"
+                    android:text="Add New Product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_14"
+                    android:layout_marginBottom="@dimen/layout_margin_reading_post"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/layoutContactUs"
+                    android:padding="@dimen/dp_8"
+                    android:background="@drawable/bg_blue_corner_solid_transperant"
+                    android:layout_marginTop="@dimen/layout_margin_reading_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_baseline_call_24" />
+                    <TextView
+
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_gravity="center"
+                        android:text="Contact Us"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_14"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/titleAddImage"
+                android:text="Add Product Image"
+                android:textColor="@color/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_16"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginTop="@dimen/layout_margin_reading_post"
+                android:id="@+id/subTitleAddImage"
+                android:text="Add your product image, it will be your product's cover image that will be higlighted on Kyarlay Platform."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_14"
+                />
+
+            <RelativeLayout
+                android:id="@+id/relativeUpload"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/dotted_corner_blue"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/imgNetwork"
+                    android:background="@drawable/dotted_corner_blue"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/imgUploaded"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:id="@+id/imgPlus"
+                    android:src="@drawable/plus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/titleCategory"
+                android:text="Category"
+                android:textColor="@color/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="@dimen/layout_margin_reading_post"
+                android:id="@+id/txtChooseCategory"
+                android:padding="@dimen/layout_margin_reading_post"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_55"
+                android:background="@drawable/bg_blue_corner_solid_transperant"
+                android:drawablePadding="@dimen/dp_4"
+                android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/text"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="Product Detail"
+                android:textColor="@color/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="@dimen/layout_margin_reading_post"
+                android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                android:layout_marginRight="@dimen/layout_margin_reading_post"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_16"
+                />
+
+            <EditText
+                android:id="@+id/edProductName"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/layout_margin_reading_post"
+                android:paddingRight="@dimen/layout_margin_reading_post"
+                android:layout_gravity="center"
+                android:textColor="@color/text"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_55"
+                android:background="@drawable/bg_blue_corner_solid_transperant"
+                android:layout_marginBottom="@dimen/layout_margin_reading_post"
+                />
+            <TextView
+                android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                android:layout_marginRight="@dimen/layout_margin_reading_post"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:id="@+id/txtProductNameWarning"
+                android:textSize="@dimen/text_16"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/layout_margin_reading_post"
+                android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                android:layout_marginRight="@dimen/layout_margin_reading_post"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_16"
+                />
+
+            <EditText
+                android:id="@+id/edPrice"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/layout_margin_reading_post"
+                android:paddingRight="@dimen/layout_margin_reading_post"
+                android:layout_gravity="center"
+                android:textColor="@color/text"
+                android:inputType="number"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_55"
+                android:background="@drawable/bg_blue_corner_solid_transperant"
+                android:layout_marginBottom="@dimen/layout_margin_reading_post"
+                />
+
+            <TextView
+                android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                android:layout_marginRight="@dimen/layout_margin_reading_post"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:id="@+id/txtProductPriceWarning"
+                android:textSize="@dimen/text_16"
+                />
+
+
+
+            <TextView
+                android:layout_marginTop="@dimen/layout_margin_reading_post"
+                android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                android:layout_marginRight="@dimen/layout_margin_reading_post"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price (After Commission)"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_16"
+                />
+
+            <TextView
+                android:id="@+id/txtPriceCommission"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/layout_margin_reading_post"
+                android:paddingRight="@dimen/layout_margin_reading_post"
+                android:gravity="center|left"
+                android:text="0"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_55"
+                android:background="@drawable/bg_blue_corner_solid_transperant"
+                android:layout_marginBottom="@dimen/layout_margin_reading_post"
+                />
+
+            <TextView
+                android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                android:layout_marginRight="@dimen/layout_margin_reading_post"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:id="@+id/txtCommissionPriceWarning"
+                android:textSize="@dimen/text_16"
+                />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/layout_margin_reading_post"
+                android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                android:layout_marginRight="@dimen/layout_margin_reading_post"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_16"
+                />
+
+            <EditText
+                android:id="@+id/edDescription"
+                android:singleLine="false"
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_margin_reading_post"
+                android:textColor="@color/text"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:gravity="top"
+
+                android:background="@drawable/bg_blue_corner_solid_transperant"
+                android:layout_marginBottom="@dimen/layout_margin_reading_post"
+
+                />
+
+<!--
+
+            <EditText
+                android:id="@+id/edDescription"
+                android:singleLine="false"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:padding="@dimen/layout_margin_reading_post"
+                android:textColor="@color/text"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/bg_blue_corner_solid_transperant"
+                android:layout_marginBottom="@dimen/layout_margin_reading_post"
+                />
+-->
+
+
+
+
+            <TextView
+                android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                android:layout_marginRight="@dimen/layout_margin_reading_post"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:id="@+id/txtDescriptionWarning"
+                android:textSize="@dimen/text_16"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_55"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="Create Product"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/btnCreate"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_gravity="center"
+                android:background="@drawable/background_blue_solid"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

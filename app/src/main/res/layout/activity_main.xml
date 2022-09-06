@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_55"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                    android:text="Add New Product"
+                    android:layout_gravity="center"
+                    android:textColor="@color/text"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgNotification"
+                    android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/ic_baseline_notifications_none_24"
+                    tools:ignore="VectorDrawableCompat" />
+
+
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_marginRight="@dimen/layout_margin_reading_post"
+                    android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/ic_baseline_person_outline_24"
+                    tools:ignore="VectorDrawableCompat" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtSearch"
+                android:textSize="@dimen/text_16"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:gravity="center|left"
+                android:textColor="@color/text_gray"
+                android:text="To Search"
+                android:drawablePadding="@dimen/layout_margin_reading_post"
+                android:paddingLeft="@dimen/layout_margin_reading_post"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:layout_marginLeft="@dimen/layout_margin_reading_post"
+                android:layout_marginRight="@dimen/layout_margin_reading_post"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_grey_corner_30"
+                />
+
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <LinearLayout
+
+            android:id="@+id/layoutNoProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/txtNoProduct"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tekdkfkdkfd"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_16" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/kyarlaybanner" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeCreateProduct"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_55"
+                android:layout_margin="@dimen/layout_margin_reading_post"
+                android:text="Create Product"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/btnAdd"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_gravity="center"
+                android:background="@drawable/background_blue_solid"
+                />
+
+        </RelativeLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="@color/white"
+            android:layout_marginBottom="80dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/recyclerView"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:padding="@dimen/dp_8"
+            app:backgroundTint="@color/dark_blue"
+            app:srcCompat="@drawable/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="100dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:elevation="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kyarlay Merchant</string>
+    <string name="login_with_phnumber">ဖုန်းနံပါတ်ဖြင့် Login လုပ်ရန်</string>
+    <string name="enter_register_number">ကျားလေးတွင် စားရင်းသွင်းထားသော ဖုန်းနံပါတ်ကို ထည့်ရန်</string>
+    <string name="enter_register_password">ကျားလေးတွင် စားရင်းသွင်းထားသော လျို့၀ှက်နံပါတ်ကို ထည့်ရန်</string>
+    <string name="login">ဆိုင်ထဲ ၀င်ရန်</string>
+    <string name="error_login">ဖုန်းနံပါတ်နှင့် လျို့၀ှက်နံပါတ်ကို ပြန်စစ်ဆေးပါ</string>
+    <string name="add_new_product">ပစ္စည်းအသစ်ထည့်ရန်</string>
+    <string name="add_new_product_sub_title">ရောင်းရန်ပစ္စည်း အသေးစိတ်ထည့်ပါ</string>
+    <string name="need_help">အကူအညီလိုပါသလား?</string>
+    <string name="need_help_contact">ပစ္စည်းထည့်သွင်းရာတွင် အကူအညီလိုပါက ကျားလေးသို့ ဆက်သွယ်နိုင်ပါသည်</string>
+    <string name="choose_category">ပစ္စည်းအမျိုးအစားရွေးချယ်ပါ</string>
+    <string name="your_category">ပစ္စည်းအမျိုးအစား အားလုံးကြည့်မယ်</string>
+    <string name="add">ထည့်သွင်းမည်</string>
+    <string name="error_message">တစ်ခုခု မှားသွားပါသည်။ ပြန်​ကြိုးစားကြည့်ပါ။ </string>
+    <string name="loading_wait">လုပ်ဆောင်နေ.... ခဏစောင့်ပါ</string>
+    <string name="product_create_success">ပစ္စည်းအသစ်ထည့်ပြီးပါပြီ</string>
+    <string name="product_edit_success">ပစ္စည်းအချက်အလက် ပြင်ပြီးပါပြီ</string>
+    <string name="product_name_waring">ပစ္စည်း အမည် ရိုက်ထည့်ပါ</string>
+    <string name="product_price_waring">ပစ္စည်းစျေးနှုန်း ရိုက်ထည့်ပါ</string>
+    <string name="product_description_waring">ပစ္စည်း အသေးစိတ်အချက်အလက် ရိုက်ထည့်ပါ</string>
+    <string name="product_commission_price_warning">ကျားလေးမှ Commision နှုတ်ပီး သင်ရရှိမည့် ပစ္စည်းစျေးနှုန်း ဖြစ်ပါသည်</string>
+    <string name="search_product">ပစ္စည်း ရှာရန်</string>
+    <string name="no_product_add_product">ပြသရန် ပစ္စည်းမရှိသေးပါ။\nရောင်းရန် ပစ္စည်းများ ထည့်သွင်းပါ၊</string>
+    <string name="add_product">ထည့်သွင်းမယ်</string>
+    <string name="noitem">ပြသရန် မရှိသေးပါ။</string>
+    <string name="currency">ကျပ်</string>
+    <string name="edit_product">သင်၏ ပစ္စည်းကို ပြင်မယ်</string>
+
+    <string name="change_language">ဘာသာစကား</string>
+    <string name="logout">အကောင့်မှ ထွက်မယ်</string>
+    <string name="profile">ပရိုဖိုင်</string>
+    <string name="logout_confirm_title">သင်၏ အကောင့်မှ ထွက်မှာသေချာပြီလား။</string>
+    <string name="confirm">သေချာပါသည်</string>
+    <string name="cancel">မလုပ်တော့ပါ</string>
+    <string name="setting_myanmar">မြန်မာ</string>
+    <string name="setting_english">English</string>
+    <string name="change_password">လျို့၀ှက်နံပါတ် ပြောင်းမယ်</string>
+    <string name="verification_code">One Time Password</string>
+    <string name="enter_verify_code">သင့်ဖုန်းထဲသို့ ပေးပို့လိုက်သော \nကုဒ်နံပါတ်ကို ရိုက်ထည့်ပါ။</string>
+    <string name="click_otp">Otp Code ရယူရန်နှိပ်ပါ</string>
+    <string name="submit">အတည်ပြုရန်</string>
+    <string name="otp_code">ကုဒ်နံပါတ် အားလုံးကို ရိုက်ထည့်ပါ။</string>
+    <string name="otp_error">ကျားလေး Opt ကုဒ်နံပါတ် မှားနေပါသည်။</string>
+    <string name="otp_time">တမိနစ်ခန့်စောင့်ပါ...</string>
+    <string name="otp_waiting_time"> %s စက္ကန့်စောင့်ပြီး ပြန်စမ်းပေးပါ။ </string>
+    <string name="check_number">ဖုန်းနံပါတ် မှားယွင်းနေပါသည်။ ပြန်​ကြိုးစားကြည့်ပါ။</string>
+    <string name="password_check_again">လျို့၀ှက်နံပါတ် အသစ်ကို ပြန်စစ်ဆေးပါ</string>
+    <string name="change_password_successful">လျို့၀ှက်နံပါတ် အသစ်ကို ပြောင်းလဲပြီးပါပြီ</string>
+    <string name="enter_new_password">လျို့၀ှက်နံပါတ် အသစ်ကို ရိုက်ထည့်ပါ</string>
+    <string name="sure">သေချာပါသလား?</string>
+    <string name="cancel_delete">မလုပ်ဆောင်တော့ပါ</string>
+    <string name="confirm_delete">ပယ်ဖျက်မည်</string>
+    <string name="deleted_status">သင်၏ ပစ္စည်းကို ဖျက်ပြီးပါပြီ</string>
+    <string name="edit">ပြင်မယ်</string>
+
+    <string name="changed_status">သင်၏ ပစ္စည်း statusကို ပြောင်းပြီးပါပြီ</string>
+
+</resources>

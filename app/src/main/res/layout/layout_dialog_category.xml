@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    android:layout_margin="@dimen/dp_4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linearMain"
+        android:background="@drawable/background_top_coner_white"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/layout_margin_reading_post"
+
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/imgClose"
+                android:layout_margin="@dimen/layout_margin_reading_post"
+                app:srcCompat="@drawable/line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="VectorDrawableCompat" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background"/>
+        </LinearLayout>
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_margin="@dimen/layout_margin_reading_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/linearAdd"
+                    />
+
+                <TextView
+                    android:layout_marginBottom="@dimen/dimen_20"
+                    android:layout_marginTop="@dimen/dimen_20"
+                    android:visibility="gone"
+                    android:id="@+id/txtWatch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>
+
+
